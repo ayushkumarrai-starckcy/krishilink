@@ -1,0 +1,101 @@
+.market-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.prices-card {
+    grid-column: 1 / 2;
+}
+
+.chart-card {
+    grid-column: 2 / 3;
+}
+
+.filter-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.prices-table {
+    margin-top: 20px;
+}
+
+.prices-table th {
+    background-color: #f4f7f6;
+}
+
+.prices-table .sub-header {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: normal;
+}
+
+.prices-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.prices-table tbody tr:hover {
+    background-color: #f0f8ff;
+    /* Light blueish tint */
+}
+
+/* Chart Styles */
+.chart-container {
+    display: flex;
+    height: 200px;
+    margin-top: 20px;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.chart-area {
+    flex-grow: 1;
+    position: relative;
+}
+
+.trend-line {
+    width: 100%;
+    height: 100%;
+}
+
+.x-axis {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    /* Offset for y-axis */
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .market-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-card {
+        grid-column: 1 / -1;
+    }
+}
