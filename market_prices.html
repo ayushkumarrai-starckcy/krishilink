@@ -39,12 +39,20 @@
             <h2>Real-time Market Prices</h2>
 
             <div class="filter-row">
-                <input type="text" placeholder="Select Commodity" class="search-input">
-                <input type="text" placeholder="Select Mandi" class="search-input">
-            </div>
-            <div class="filter-row">
-                <input type="text" placeholder="Select Mandi" class="search-input">
-                <input type="text" placeholder="Select Mandi" class="search-input">
+                <select class="search-input">
+                    <option value="" disabled selected>Select Commodity</option>
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="onion">Onion</option>
+                    <option value="tomato">Tomato</option>
+                </select>
+                <select class="search-input">
+                    <option value="" disabled selected>Select Mandi</option>
+                    <option value="azadpur">Azadpur Mandi</option>
+                    <option value="ghazipur">Ghazipur Mandi</option>
+                    <option value="okhla">Okhla Mandi</option>
+                </select>
+                <button class="filter-btn"><i class="fas fa-search"></i> Search</button>
             </div>
 
             <table class="prices-table">
@@ -62,12 +70,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1 ABC</td>
+                        <td>1 chilli</td>
                         <td>02/Dec/2025</td>
                         <td>₹2150 <span class="text-green">↑ ₹20</span></td>
                     </tr>
                     <tr>
-                        <td>2 ABC Mandi</td>
+                        <td>2 Onion</td>
                         <td>02/Dec/2025</td>
                         <td>₹2150 <span class="text-green">↑ ₹20</span></td>
                     </tr>
@@ -87,13 +95,13 @@
                         <td>₹3500 <span class="text-green">↑ ₹50</span></td>
                     </tr>
                     <tr>
-                        <td>7 ABC</td>
+                        <td>7 Potato</td>
                         <td>02/Dec/2025</td>
                         <td>₹800 <span class="text-green">↑ ₹0</span></td>
                     </tr>
                     <tr>
-                        <td>6 Tomato</td>
-                        <td>Rice</td>
+                        <td>6 Brinjal</td>
+                        <td>02/Dec/2025</td>
                         <td>₹800 <span class="text-red">= ₹0</span></td>
                     </tr>
                 </tbody>
